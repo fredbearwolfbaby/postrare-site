@@ -46,7 +46,6 @@
       width: 100%;
     }
 
-    /* Logo */
     .logo {
       display: flex;
       align-items: baseline;
@@ -74,7 +73,6 @@
       top: 1px;
     }
 
-    /* Tagline */
     .tagline {
       margin-bottom: 48px;
       opacity: 0;
@@ -99,7 +97,6 @@
       font-weight: 400;
     }
 
-    /* Body copy */
     .body-copy {
       margin-bottom: 48px;
       opacity: 0;
@@ -123,7 +120,6 @@
       font-size: 0.9375rem;
     }
 
-    /* CTA */
     .cta-wrap {
       opacity: 0;
       animation: fadeUp 0.6s ease 0.3s forwards;
@@ -161,7 +157,6 @@
       font-weight: 300;
     }
 
-    /* Divider */
     .divider {
       width: 32px;
       height: 1px;
@@ -171,7 +166,6 @@
       animation: fadeUp 0.6s ease 0.15s forwards;
     }
 
-    /* Footer */
     footer {
       padding: 24px 48px;
       max-width: 680px;
@@ -188,13 +182,11 @@
       letter-spacing: 0.02em;
     }
 
-    /* Animations */
     @keyframes fadeUp {
       from { opacity: 0; transform: translateY(12px); }
       to   { opacity: 1; transform: translateY(0); }
     }
 
-    /* Mobile */
     @media (max-width: 600px) {
       main { padding: 56px 32px; }
       footer { padding: 24px 32px; }
@@ -227,10 +219,23 @@
       </div>
 
       <div class="cta-wrap">
-        <a class="cta" href="https://tally.so/r/0QPkp9" target="_blank" rel="noopener">
+        <a class="cta" href="#signup" onclick="document.getElementById('signup').scrollIntoView({behavior:'smooth'});return false;">
           request early access &rarr;
         </a>
         <span class="cta-sub">No card required. We'll be in touch ASAP.</span>
+      </div>
+
+      <div id="signup" style="margin-top:64px;">
+        <iframe
+          src="https://tally.so/embed/0QPkp9?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
+          width="100%"
+          frameborder="0"
+          marginheight="0"
+          marginwidth="0"
+          title="postrare waitlist"
+          style="border:none;min-height:200px;">
+        </iframe>
+        <script>var d=document,w="https://tally.so/widgets/embed.js",v=function(){"undefined"!=typeof Tally?Tally.loadEmbeds():d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach((function(e){e.src=e.dataset.tallySrc}))};if("undefined"!=typeof Tally)v();else if(d.querySelector('script[src="'+w+'"]')==null){var s=d.createElement("script");s.src=w,s.onload=v,s.onerror=v,d.body.appendChild(s);}</script>
       </div>
 
     </div>
